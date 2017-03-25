@@ -4,10 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
-import { AppComponent } from './app.component';
 
-//Material design
-import
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -23,3 +21,4 @@ import
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

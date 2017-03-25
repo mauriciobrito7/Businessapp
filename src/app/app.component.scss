@@ -1,0 +1,19 @@
+//Aqui se importaran los componentes del proyecto
+//Congif
+@import "./scss/_config";
+
+md-toolbar{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,color(bloodRed1),color(bloodRed2));
+    color: color(white);
+    font-family: $font-branding;
+    padding: $gutter*0.2;
+    font-size: $gutter*1.5;
+    @include desde($medium){
+        font-size: $gutter*2;
+    }
+    @include desde($large){
+        font-size: $gutter*2.5;
+    }
+}
