@@ -1,20 +1,41 @@
 //Aqui se importaran los componentes del proyecto
 //Congif
-@import "./scss/_config";
-
+@import "./_config";
+main{
+    font-family: $font-text;
+}
 nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background: linear-gradient(to right,color(bloodRed1),color(bloodRed2));
     color: color(white);
     font-family: $font-branding;
     padding: $gutter*0.5;
     font-size: $gutter*1.5;
-    @include desde($medium){
+    @include desde($small){
         font-size: $gutter*2;
     }
-    @include desde($large){
+    @include desde($medium){
         font-size: $gutter*2.5;
     }
+    @include desde($large){
+        font-size: $gutter*2.8;
+    }
+    .#{&}-branding{
+    }
 }
+
+md-card{
+    max-width: 960px;
+    margin:0 auto !important;
+    display: flex;
+}
+
+md-sidenav-container{
+    height: 100vh;
+    md-sidenav{
+        padding: $gutter;
+    }
+}
+

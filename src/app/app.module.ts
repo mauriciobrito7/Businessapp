@@ -4,12 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
-
+//Components
 import { AppComponent } from './app.component';
-
+import { InventarioComponent } from './inventario/inventario.component';
+//Services
+import { ProductosService } from './services/productos.service';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InventarioComponent
   ],
   imports: [
     BrowserModule,
@@ -17,7 +20,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

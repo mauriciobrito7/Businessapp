@@ -1,11 +1,30 @@
-<nav>
-  <span class="md-toolbar__branding">Businessapp</span>
-  <button md-icon-button>
-    <md-icon>
-      more_vert
-    </md-icon>
-  </button>
-</nav>
+<main>
+  <md-sidenav-container align="end" class="example-container">
+    <nav>
+      <span class="nav-branding">Businessapp</span>
+      <button md-icon-button (click)="sidenav.open()">
+        <md-icon>
+          more_vert
+        </md-icon>
+      </button>
+    </nav>
+    <md-sidenav #sidenav class="md-sidenav">
+      <ul class="md-sidenav-list">
+        <li class="md-sidenav-list__item">Inventario</li>
+        <li class="md-sidenav-list__item">Ganancias</li>
+        <li class="md-sidenav-list__item">Otra cosa</li>
+      </ul>
+    </md-sidenav>
+    <md-card>
+      <app-inventario>
+        
+      </app-inventario>
+    </md-card>
+  </md-sidenav-container>
+</main>
+
+
+
 
 
 
